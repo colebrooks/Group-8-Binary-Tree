@@ -19,3 +19,11 @@
 
     int btsize(binary_tree* bt);
     int treeheight(binary_tree* bt);
+    
+    makefile
+    script to test error checking
+    
+    Cole: search, insert
+    Conner: print in order, treeheight
+    Brooke: print pre order, makefile
+    Brendan: print post order, script
