@@ -5,7 +5,7 @@
 typedef struct binarytree {
     int numberElements;
     node* rootNode;
-}
+} binarytree;
 
 void initialize(binary_tree* bt);
 bool search(binary_tree* bt, int key);
