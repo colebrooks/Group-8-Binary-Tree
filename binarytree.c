@@ -3,7 +3,7 @@
 // Binary Tree Implementation
 // Binary Tree Functions
 // CSCI 205
-// Last Edit: 11:13 03/13/19
+// Last Edit: 11:29 03/13/19
 //**************************************
 
 #include <stdio.h>
@@ -16,15 +16,15 @@ void initialize(binary_tree* bt){
 
 bool search(binary_tree* bt, int key){
     node* temp = bt->rootNode;
-    while(temp->number != key) {
+    while(temp != NULL) {
+        if(temp->number == key) {
+            return true;
+        }
         if(key < temp->number) {
             temp = temp->left;
         }
         else {
             temp = temp->right;
-        }
-        if(temp->number == key) {
-            return true;
         }
     }
     return false;
