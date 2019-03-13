@@ -1,3 +1,11 @@
+//**************************************
+// Group 8
+// Binary Tree Implementation
+// Main Function
+// CSCI 205
+// Last Edit: 11:33 03/13/19
+//**************************************
+
 #include <stdio.h>
 
 int main() {
