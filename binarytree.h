@@ -2,10 +2,10 @@
 #define BINARYTREE_H
 #include "node.h"
 
-typedef struct binarytree {
+typedef struct binarytree_struct {
     int numberElements;
     node* rootNode;
-} binarytree;
+} binary_tree;
 
 void initialize(binary_tree* bt);
 bool search(binary_tree* bt, int key);

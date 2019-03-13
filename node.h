@@ -16,6 +16,6 @@ typedef struct node_struct {
     int number;
     struct node_struct* left;
     struct node_struct* right;
-} Node;
+} node;
 
 #endif
