@@ -13,6 +13,7 @@
 
 void initialize(binary_tree* bt){
     bt->numberElements = 0;
+    bt-rootNode = NULL;
 }
 
 bool search(binary_tree* bt, int key){ //UNTESTED
