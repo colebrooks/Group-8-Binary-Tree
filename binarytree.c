@@ -15,7 +15,7 @@ void initialize(binary_tree* bt){
     bt->numberElements = 0;
 }
 
-bool search(binary_tree* bt, int key){
+bool search(binary_tree* bt, int key){ //UNTESTED
     node* temp = bt->rootNode;
     while(temp != NULL) {
         if(temp->number == key) {
