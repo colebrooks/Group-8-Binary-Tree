@@ -6,6 +6,7 @@
 // Last Edit: 11:36 03/13/19
 //**************************************
 
+#include <stdio.h>
 #include "node.h"
 
 // recursive function used to detemine a tree's height. Recurses down the left,
@@ -17,7 +18,7 @@ int heightRecurse(node* recurseNode) {
 
     // if no node exists (tree is empty or we've reached the end of a branch),
     // return 0
-    if(recurseNode == NULL) {
+    if(recurseNode == 0) {
         heightCounter = 0;
     }
     else {
@@ -39,13 +40,13 @@ int heightRecurse(node* recurseNode) {
 
 // print left if it exists, print this node's value, then print right
 void printInOrderRecurse(node* recurseNode) {
-    if(recurseNode->left != NULL) {
+    if(recurseNode->left != 0) {
         printInOrderRecurse(recurseNode->left);
     }
 
     printf("%d ", recurseNode->number);
 
-    if(recurseNode->right != NULL) {
+    if(recurseNode->right != 0) {
         printInOrderRecurse(recurseNode->right);
     }
 }
