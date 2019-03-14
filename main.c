@@ -7,8 +7,12 @@
 //**************************************
 
 #include <stdio.h>
+#include "binarytree.h"
 
 int main() {
+   binarytree bt* = malloc(sizeof(binarytree));
+   bool found = false;
+
    printf("Print in order\n");
    printinorder(&bt);
    printf("\nPrint pre order\n");
