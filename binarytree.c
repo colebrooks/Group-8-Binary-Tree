@@ -8,12 +8,13 @@
 
 #include <stdio.h>
 #include <stdbool.h>
+#include <stdlib.h>
 #include "binarytree.h"
 #include "node.h"
 
 void initialize(binary_tree* bt){
     bt->numberElements = 0;
-    bt-rootNode = NULL;
+    bt->rootNode = NULL;
 }
 
 bool search(binary_tree* bt, int key){ //UNTESTED
@@ -33,7 +34,17 @@ bool search(binary_tree* bt, int key){ //UNTESTED
 }
 
 void insert(binary_tree* bt, int item){
+    node* temp = bt->rootNode;
+    node* newNode = (node*)malloc(sizeof(node));
+    newNode->number = item;
+    newNode->left = NULL;
+    newNode->right = NULL;
 
+    while(temp != NULL) {
+        if(newNode->number < temp->number) {
+            temp = temp->left;
+        }
+    }
 }
 
 void printinorder(binary_tree* bt){ // also untested
