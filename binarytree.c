@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include "binarytree.h"
+#include "node.h"
 
 void initialize(binary_tree* bt){
     bt->numberElements = 0;
@@ -35,7 +36,9 @@ void insert(binary_tree* bt, int item){
 }
 
 void printinorder(binary_tree* bt){
-
+    // calls function defined in node.c
+    printInOrderRecurse(bt->rootNode);
+    printf("\n"):
 }
 
 void printpreorder(binary_tree* bt){
@@ -51,5 +54,6 @@ int btsize(binary_tree* bt){
 }
 
 int treeheight(binary_tree* bt){
-
+    // calls function defined in node.c
+    return int heightRecurse(bt->rootNode);
 }

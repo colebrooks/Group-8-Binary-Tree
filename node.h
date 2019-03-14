@@ -18,4 +18,7 @@ typedef struct node_struct {
     struct node_struct* right;
 } node;
 
+int heightRecurse(node* recurseNode);
+int printInOrderRecurse(node* recurseNode);
+
 #endif
