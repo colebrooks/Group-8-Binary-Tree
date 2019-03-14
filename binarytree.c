@@ -41,7 +41,7 @@ void printinorder(binary_tree* bt){ // also untested
     if(btsize(bt) == 0) {
         printInOrderRecurse(bt->rootNode);
     }
-    printf("\n"):
+    printf("\n");
 }
 
 void printpreorder(binary_tree* bt){
