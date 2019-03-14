@@ -38,7 +38,7 @@ int heightRecurse(node* recurseNode) {
 }
 
 // print left if it exists, print this node's value, then print right
-int printInOrderRecurse(node* recurseNode) {
+void printInOrderRecurse(node* recurseNode) {
     if(recurseNode->left != NULL) {
         printInOrderRecurse(recurseNode->left);
     }

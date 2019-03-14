@@ -47,9 +47,11 @@ void insert(binary_tree* bt, int item){
     }
 }
 
-void printinorder(binary_tree* bt){
+void printinorder(binary_tree* bt){ // also untested
     // calls function defined in node.c
-    printInOrderRecurse(bt->rootNode);
+    if(btsize(bt) == 0) {
+        printInOrderRecurse(bt->rootNode);
+    }
     printf("\n"):
 }
 
@@ -65,7 +67,7 @@ int btsize(binary_tree* bt){
 
 }
 
-int treeheight(binary_tree* bt){
+int treeheight(binary_tree* bt){ // untested
     // calls function defined in node.c
-    return int heightRecurse(bt->rootNode);
+    return heightRecurse(bt->rootNode);
 }

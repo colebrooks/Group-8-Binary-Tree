@@ -8,6 +8,7 @@
 
 #ifndef BINARYTREE_H
 #define BINARYTREE_H
+#include <stdbool.h>
 #include "node.h"
 
 typedef struct binarytree_struct {
