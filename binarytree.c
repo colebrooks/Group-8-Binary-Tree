@@ -33,16 +33,36 @@ bool search(binary_tree* bt, int key){ //UNTESTED
     return false;
 }
 
-void insert(binary_tree* bt, int item){
+void insert(binary_tree* bt, int item){ //UNTESTED
     node* temp = bt->rootNode;
     node* newNode = (node*)malloc(sizeof(node));
     newNode->number = item;
     newNode->left = NULL;
     newNode->right = NULL;
 
-    while(temp != NULL) {
+    if(bt->numberElements == 0) {
+        bt->rootNode = newNode;
+        return;
+    }
+
+    while(true) {
         if(newNode->number < temp->number) {
-            temp = temp->left;
+            if(temp->left != NULL) {
+                temp = temp->left;
+            }
+            else {
+                temp->left = newNode;
+                break;
+            }
+        }
+        else {
+            if(temp->right != NULL) {
+                temp = temp->right;
+            }
+            else {
+                temp->right = newNode;
+                break;
+            }
         }
     }
 }
