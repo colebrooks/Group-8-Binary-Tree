@@ -52,7 +52,7 @@ void insert(binary_tree* bt, int item){ //UNTESTED
             }
             else {
                 temp->left = newNode;
-                break;
+                return;
             }
         }
         else {
@@ -61,7 +61,7 @@ void insert(binary_tree* bt, int item){ //UNTESTED
             }
             else {
                 temp->right = newNode;
-                break;
+                return;
             }
         }
     }
