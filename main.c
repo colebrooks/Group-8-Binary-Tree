@@ -53,6 +53,8 @@ int main(int argc, char* argv[]) {
     }
     printf("Number of elements in tree: %d\n", btsize(&bt));
     printf("Tree height: %d\n", treeheight(&bt));
+
+    return 0;
 }
 
 /*Program should exit with code 1 and print an error message if the number of command line arguments is wrong.
