@@ -1,5 +1,6 @@
 \documentclass{article}
 
+
 \title{Group Eight Binary Tree Implemented in C University of Montana Spring 2019 CSCI 205}
 \date{15-03-2019}
 \author{Cole Brooks, Conner Copeland, Brooke Kern, Brendan Hagan}
@@ -18,7 +19,40 @@
 This is a binary search tree implemented in C by Group 8 in the Spring 2019 section of CSCI 205 at the University of Montana. It supports reading space separated integers from a file specified at runtime through a command line argument. A full list and description of the available functions can be found in the "Function Documentation" section below. In addition to the functions supplied within the source code, the repository includes a makefile, and a bash script for testing the functionality of the program.
 
 \section{Function Documentation}
-
+\begin{itemize}
+	\item void initialize(binary\textunderscore tree* bt);
+		\begin{itemize}
+			\item Sets the size of the new tree to zero.
+		\end{itemize}
+	\item void insert(binary\textunderscore tree* bt, int item);
+		\begin{itemize}
+			\item Inserts a new node containing the given item into the tree.
+		\end{itemize}
+	\item bool search(binary\textunderscore tree* bt, int key);
+		\begin{itemize}
+			\item Returns whether given key is in the tree.
+		\end{itemize}
+	\item void printinorder(binary\textunderscore tree* bt);
+		\begin{itemize}
+			\item Prints the tree contents from smallest node to largest.
+		\end{itemize}
+	\item void printpreorder(binary\textunderscore tree* bt);
+		\begin{itemize}
+			\item Prints sequence of nodes derived from preorder traversal.
+		\end{itemize}
+	\item void printpostorder(binary\textunderscore tree* bt);
+		\begin{itemize}
+			\item Prints sequence of nodes derived from postorder traversal.
+		\end{itemize}
+	\item int btsize(binary\textunderscore tree* bt);
+		\begin{itemize}
+			\item Returns number of node in the tree.
+		\end{itemize}
+	\item int treeheight(binary\textunderscore tree* bt);
+		\begin{itemize}
+			\item Returns height of the tree.
+		\end{itemize}
+\end{itemize}
 
 
 \end{document}
