@@ -3,7 +3,6 @@
 // Binary Tree Implementation
 // Main Function
 // CSCI 205
-// Last Edit: 12:34 03/15/19
 //**************************************
 
 #include <stdio.h>
@@ -56,5 +55,3 @@ int main(int argc, char* argv[]) {
     return 0;
 }
 
-/*Program should exit with code 1 and print an error message if the number of command line arguments is wrong.
-Program should exit with code 1 and print an error message if the input file does not exist.*/

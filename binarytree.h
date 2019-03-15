@@ -3,7 +3,6 @@
 // Binary Tree Implementation
 // Binary Tree ADT
 // CSCI 205
-// Last Edit: 11:33 03/13/19
 //**************************************
 
 #ifndef BINARYTREE_H

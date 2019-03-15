@@ -3,7 +3,6 @@
 // Binary Tree Implementation
 // Binary Tree Functions
 // CSCI 205
-// Last Edit: 11:44 03/15/19
 //**************************************
 
 #include <stdio.h>
@@ -17,7 +16,8 @@ void initialize(binary_tree* bt){
     bt->rootNode = NULL;
 }
 
-bool search(binary_tree* bt, int key){ //UNTESTED
+bool search(binary_tree* bt, int key){
+    //Returns whether given query is in the tree.
     node* temp = bt->rootNode;
     while(temp != NULL) {
         if(temp->number == key) {
@@ -33,7 +33,8 @@ bool search(binary_tree* bt, int key){ //UNTESTED
     return false;
 }
 
-void insert(binary_tree* bt, int item){ //UNTESTED
+void insert(binary_tree* bt, int item){
+    //Inserts new node into tree & increments numberElements.
     node* temp = bt->rootNode;
     node* newNode = (node*)malloc(sizeof(node));
     newNode->number = item;
@@ -46,7 +47,7 @@ void insert(binary_tree* bt, int item){ //UNTESTED
         return;
     }
 
-    while(true) {
+    while(true) { //Traverses tree to find insertion point.
         if(newNode->number < temp->number) {
             if(temp->left != NULL) {
                 temp = temp->left;
@@ -70,8 +71,8 @@ void insert(binary_tree* bt, int item){ //UNTESTED
     return;
 }
 
-void printinorder(binary_tree* bt){ // also untested
-    // calls function defined in node.c
+void printinorder(binary_tree* bt){
+    //Calls function defined in node.c.
     if(btsize(bt) != 0) {
         printInOrderRecurse(bt->rootNode);
     }
@@ -86,11 +87,11 @@ void printpostorder(binary_tree* bt){
 
 }
 
-int btsize(binary_tree* bt){ //UNTESTED
+int btsize(binary_tree* bt){
     return(bt->numberElements);
 }
 
-int treeheight(binary_tree* bt){ // untested
-    // calls function defined in node.c
+int treeheight(binary_tree* bt){ //NEEDS BUG FIX
+    //Calls function defined in node.c.
     return heightRecurse(bt->rootNode);
 }

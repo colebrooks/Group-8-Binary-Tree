@@ -3,7 +3,6 @@
 // Binary Tree Implementation
 // Node Struct
 // CSCI 205
-// Last Edit: 11:13 03/13/19
 //**************************************
 
 
