@@ -42,6 +42,7 @@ void insert(binary_tree* bt, int item){ //UNTESTED
 
     if(bt->numberElements == 0) {
         bt->rootNode = newNode;
+        bt->numberElements++;
         return;
     }
 
@@ -52,7 +53,7 @@ void insert(binary_tree* bt, int item){ //UNTESTED
             }
             else {
                 temp->left = newNode;
-                return;
+                break;
             }
         }
         else {
@@ -61,10 +62,12 @@ void insert(binary_tree* bt, int item){ //UNTESTED
             }
             else {
                 temp->right = newNode;
-                return;
+                break;
             }
         }
     }
+    bt->numberElements++;
+    return;
 }
 
 void printinorder(binary_tree* bt){ // also untested
