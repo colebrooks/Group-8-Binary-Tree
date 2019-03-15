@@ -3,7 +3,7 @@
 // Binary Tree Implementation
 // Binary Tree Functions
 // CSCI 205
-// Last Edit: 11:29 03/13/19
+// Last Edit: 11:44 03/15/19
 //**************************************
 
 #include <stdio.h>
@@ -86,8 +86,8 @@ void printpostorder(binary_tree* bt){
 
 }
 
-int btsize(binary_tree* bt){
-
+int btsize(binary_tree* bt){ //UNTESTED
+    return(bt->numberElements);
 }
 
 int treeheight(binary_tree* bt){ // untested
