@@ -72,7 +72,7 @@ void insert(binary_tree* bt, int item){ //UNTESTED
 
 void printinorder(binary_tree* bt){ // also untested
     // calls function defined in node.c
-    if(btsize(bt) == 0) {
+    if(btsize(bt) != 0) {
         printInOrderRecurse(bt->rootNode);
     }
     printf("\n");
