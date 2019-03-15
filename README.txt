@@ -39,23 +39,3 @@ In addition to the above functions, there is also a makefile, and a bash
 script for testing the functionality of the program.
 
 
-    void initialize(binary_tree* bt);
-    bool search(binary_tree* bt, int key);
-    Node file
-
-    void insert(binary_tree* bt, int item);
-    void printinorder(binary_tree* bt);
-
-    void printpreorder(binary_tree* bt);
-    void printpostorder(binary_tree* bt);
-
-    int btsize(binary_tree* bt);
-    int treeheight(binary_tree* bt);
-
-    makefile
-    script to test error checking
-
-    Cole: search, insert
-    Conner: print in order, treeheight
-    Brooke: print pre order, makefile
-    Brendan: print post order, script
