@@ -29,9 +29,8 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    while(!feof(inFile)) {
-        int item;
-        fscanf(inFile, "%d", &item);
+    int item;
+    while(fscanf(inFile, "%d", &item) == 1) {
         insert(&bt, item);
     }
     fclose(inFile);
