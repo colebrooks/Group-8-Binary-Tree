@@ -87,7 +87,7 @@ void printpostorder(binary_tree* bt){ //untested
     if(btsize(bt) != 0) {
         printPostOrderRecurse(bt->rootNode);
     }
-    print("\n");
+    printf("\n");
 }
 
 int btsize(binary_tree* bt){
