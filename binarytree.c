@@ -83,7 +83,7 @@ void printpreorder(binary_tree* bt){
 
 }
 
-void printpostorder(binary_tree* bt){ //untested
+void printpostorder(binary_tree* bt){
     if(btsize(bt) != 0) {
         printPostOrderRecurse(bt->rootNode);
     }
