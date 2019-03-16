@@ -49,3 +49,16 @@ void printInOrderRecurse(node* recurseNode) {
         printInOrderRecurse(recurseNode->right);
     }
 }
+
+void printPostOrderRecurse(node* recurseNode) {
+    //check to see if node is empty
+    if (recurseNode == 0)
+        return;
+    //recur left subtree
+    printPostOrderRecurse(recurseNode->left);
+    //recur right subtree
+    printPostOrderRecurse(recurseNode->right);
+    //go to the root
+    printf("%d ", recurseNode->number);
+
+}
