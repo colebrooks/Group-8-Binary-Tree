@@ -8,33 +8,37 @@
 #include <stdio.h>
 #include "node.h"
 
-// recursive function used to detemine a tree's height. Recurses down the left,
-// then right children of the node, if they exist, then prints the node's value
+// recursive function used to detemine a tree's height
+// if a tree is just a root, it has height 0
 int heightRecurse(node* recurseNode) {
     int heightCounter;
-    int leftDepth;
-    int rightDepth;
+    int leftHeight = 0;
+    int rightHeight = 0;
 
-    // if no node exists (tree is empty or we've reached the end of a branch),
-    // return 0
-    if(recurseNode == 0) {
-        heightCounter = 0;
+    // check if neither child exists. If the node has no children, return 0
+    if(recurseNode->left == 0 && recurseNode->right == 0) {
+        return 0;
     }
-    else {
-        leftDepth = heightRecurse(recurseNode->left);
-        rightDepth = heightRecurse(recurseNode->right);
+    else{
+        // check that left branch exists. If yes, recurse
+        if(recurseNode->left != 0) {
+            leftHeight = heightRecurse(recurseNode->left);
+        }
+        
+        //check that right branch exists. If yes, recurse
+        if(recurseNode->right != 0) {
+            rightHeight = heightRecurse(recurseNode->right);
+        }
 
-        if(leftDepth > rightDepth) {
-            // add one to results to account for height added by this node
-            heightCounter = leftDepth + 1;
+        if(leftHeight > rightHeight) {
+            heightCounter = leftHeight + 1;
         }
         else {
-            // add one to results to account for height added by this node
-            heightCounter = rightDepth + 1;
+            heightCounter = rightHeight + 1;
         }
-    }
 
-    return heightCounter;
+        return heightCounter;
+    }
 }
 
 // print left if it exists, print this node's value, then print right
