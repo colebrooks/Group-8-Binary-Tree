@@ -50,6 +50,17 @@ void printInOrderRecurse(node* recurseNode) {
     }
 }
 
+/* print the tree in the order root->left->right */
+void printPreOrderRecurse(node* recurseNode) { 
+	if (recurseNode == NULL) return;
+	printf("%d ", recurseNode->number); /* print node */
+	if (recurseNode->left != NULL) { /* traverse left subtree */
+		printPreOrderRecurse(recurseNode->left);
+	} if (recurseNode->right != NULL) { /* traverse right subtree */
+		printPreOrderRecurse(recurseNode->right);
+	}
+}
+
 void printPostOrderRecurse(node* recurseNode) {
     //check to see if node is empty
     if (recurseNode == 0)

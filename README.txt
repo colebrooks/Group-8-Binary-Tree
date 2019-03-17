@@ -39,3 +39,4 @@ In addition to the above functions, there is also a makefile, and a bash
 script for testing the functionality of the program.
 
 
+Group members: Cole Brooks, Conner Copeland, Brendan Hagan, Brooke Kern
