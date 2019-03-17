@@ -76,7 +76,6 @@ void printinorder(binary_tree* bt){
     if(btsize(bt) != 0) {
         printInOrderRecurse(bt->rootNode);
     }
-    printf("\n");
 }
 
 /* print the tree in the order root->left->right */
@@ -84,14 +83,12 @@ void printpreorder(binary_tree* bt){
 	if (bt->rootNode == NULL) return;
 	/* call function defined in node.c */
 	printPreOrderRecurse(bt->rootNode);
-	printf("\n");
 }
 
 void printpostorder(binary_tree* bt){
     if(btsize(bt) != 0) {
         printPostOrderRecurse(bt->rootNode);
     }
-    printf("\n");
 }
 
 int btsize(binary_tree* bt){
