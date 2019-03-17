@@ -1,8 +1,8 @@
 ---
-author:
+Authors:
 - 'Cole Brooks, Conner Copeland, Brooke Kern, Brendan Hagan'
-date: '15-03-2019'
-title: |
+Date: '15-03-2019'
+Title: |
     Group Eight Binary Tree Implemented in C University of Montana Spring
     2019 CSCI 205
 ---
@@ -10,7 +10,7 @@ title: |
 Overview
 ========
 
-#### 
+####
 
 This is a binary search tree implemented in C by Group 8 in the Spring
 2019 section of CSCI 205 at the University of Montana. It supports
